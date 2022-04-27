@@ -26,6 +26,11 @@
     font-weight: normal;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.3 linear;
+    filter: brightness(1);
+}
+.btn:hover, .btn:active{
+    filter: brightness(1.4);
 }
 .btn.sec{
     background: var(--Very-pale-blue);
@@ -53,6 +58,18 @@ body{
     height: 100vh;
     width: 100%;
 }
+.bg-img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('./images/pattern-background-desktop.svg') 20% 20% / cover;
+        width: 100vw;
+        height: 50vh;
+        z-index: -1;
+        animation: introLoad 2s forwards;
+      
+      }
 
 .card{
  background-color: #fff;
@@ -72,6 +89,10 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.card .card-header img{
     height: 100%;
     width: 100%;
     object-fit: cover;
